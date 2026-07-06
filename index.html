@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crucible Companion</title>
+<meta name="theme-color" content="#14110e">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Crucible">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+</head>
+<body>
+<header id="app-header">
+  <div id="title-tap" role="button" aria-label="Crucible Companion">
+    <h1>The Crucible</h1>
+    <span id="mode-seal" class="seal player" title="Current mode">PLAYER</span>
+  </div>
+</header>
+
+<main id="view"></main>
+
+<nav id="tabbar" aria-label="Main navigation">
+  <button data-tab="browse" class="active">Vault</button>
+  <button data-tab="search">Search</button>
+  <button data-tab="npcs" class="dm-only">NPC Log</button>
+  <button data-tab="maps">Maps</button>
+  <button data-tab="settings" class="dm-only">Settings</button>
+</nav>
+
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
